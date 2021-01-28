@@ -19,17 +19,66 @@
 
 <h1 align="center"> Information </h1>
 
-<p align="center"> pokemon name: {{pokemon.name}} </p>
 <img align="center" src="https://pokeres.bastionbot.org/images/pokemon/{{pokemon.id}}.png" alt="Not Found ", style="width:50px;height:60px;">
-<p align="center"> height: {{pokemon.height}} </p>
-<p align="center"> pokemon id: {{pokemon.id}} </p>
-<p align="center"> evolution to:  {{pokemon.evolution}} </p>
 
-{% for i in pokemon.base_stats %}
-    <p align="center"> stat:  {{i.stat }}</p>
-    <p align="center">base stat: {{i.base_stat }}</p>
-    <p align="center">effort: {{i.effort }}</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<table align="center" border="1">
+  <caption>pokemon information</caption>
+  <tbody>   
+    <tr>
+      <td></td>
+      <th>Name</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Pokemon id </th>
+      <th>Evolution </th>
+    </tr>
+    <tr>
+      <th> </th>
+      <td>{{pokemon.name}}</td>
+      <td>{{pokemon.height}}</td>
+      <td>{{pokemon.weight}}</td>
+      <td>{{pokemon.id}}</td>
+      <td>{{pokemon.evolution}}</td>
+      
+    </tr>
+ 
+  </tbody>
+</table>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<table align="center" border="1">
+  <caption>stats information</caption>
+  <tbody>  
+       <tr>
+      <td></td>
+      <th>stats</th>
+      <th>base stat</th>
+      <th>effort </th>
+    </tr>
+
     
-{% endfor %}
+    {% for i in pokemon.base_stats %}
+    <tr>
+    <th> </th>
+    <td > {{i.stat }}</td>
+    <td >{{i.base_stat }}</td>
+    <td >{{i.effort }}</td>
+    </tr>
+    {% endfor %}
+    
+
+  </tbody>
+</table>
+
 </body>
 </html>

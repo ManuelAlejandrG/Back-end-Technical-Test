@@ -16,11 +16,23 @@
 <h2 align="center"> This project is MO-technologies back-end technical test  </h2>
 <h3 align="center"  > The pokemon in database are:  </h3>
 
-{% for i in po %}
-    <p align="center"> {{i }}
-    </p>
-    
-{% endfor %}
+<table align="center" border="1">
+  <caption>Pokemons</caption>
+  <tbody>
+    <tr>
+      <td></td>
+      <th>Name</th>
+    </tr>
+    {% for i in po %}
+    <tr>
+      <th></th>
+      <td>{{i}}</td>
+      
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
 
 
 </body>

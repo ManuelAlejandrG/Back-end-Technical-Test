@@ -12,11 +12,29 @@
 <body>
  
 <h1 align="center"> Evolution </h1>
-
-<p align="center">  name is {{ pokemon.name }} </p>
-<p align="center"> its evolution is {{ pokemon.evolution }} </p>
-<p align="center"> its pokemon id is {{ pokemon.poke_id }} </p>
-
+<table border="1" align="center">
+  <caption>Evolution Pokemon</caption>
+  <tbody>
+    <tr>
+      <td></td>
+      <th>Name</th>
+      <th>Evolution</th>
+      <th>Id</th>
+      <th>min_level</th>
+      <th>needs_overworld_rain</th>
+      <th>turn_upside_down</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{{ pokemon.name }}</td>
+      <td>{{ pokemon.evolution }}</td>
+      <td>{{ pokemon.poke_id }}</td>
+      <td>{{ pokemon.min_level }}</td>
+      <td>{{ pokemon.needs_overworld_rain }}</td>
+      <td>{{ pokemon.turn_upside_down }}</td>
+    </tr>
+  </tbody>
+</table>
 
 
 </body>
