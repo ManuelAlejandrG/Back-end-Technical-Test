@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <style>
+   body { background-color: #A9A9A9; }
+   img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  </style>
+  <meta charset="utf-8">
+  <title>Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+ 
+
+<h1 align="center"> Information </h1>
+
+<p align="center"> pokemon name: {{pokemon.name}} </p>
+<img align="center" src="https://pokeres.bastionbot.org/images/pokemon/{{pokemon.id}}.png" alt="Not Found ", style="width:50px;height:60px;">
+<p align="center"> height: {{pokemon.height}} </p>
+<p align="center"> pokemon id: {{pokemon.id}} </p>
+<p align="center"> evolution to:  {{pokemon.evolution}} </p>
+
+{% for i in pokemon.base_stats %}
+    <p align="center"> stat:  {{i.stat }}</p>
+    <p align="center">base stat: {{i.base_stat }}</p>
+    <p align="center">effort: {{i.effort }}</p>
+    
+{% endfor %}
+</body>
+</html>
